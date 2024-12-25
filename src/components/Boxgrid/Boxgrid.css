@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid red;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 columns of equal width */
+  grid-template-rows: repeat(10, 1fr); /* 10 rows of equal height */
+  gap: 2px; /* Space between grid items */
+  width: 500px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+}
+
+
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: bold;
+}
+.grid-item:hover{
+  background-color: #a1a1a1 ;
+
+}
